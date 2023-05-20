@@ -181,11 +181,15 @@ body{
 }
 .menu {
 }
+.menu__body {
+}
 .menu__icon {
 }
 .menu__list {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 35px;
+    row-gap: 3px;
     justify-content: flex-end;
 }
 .menu__link:hover{
@@ -194,6 +198,7 @@ body{
 .menu__item {
 }
 .menu__link {
+    display: block;
     font-size: 16px;
     line-height: 1.62; /* 26/16 */
     color: #fff;
@@ -225,10 +230,18 @@ body{
     font-weight: 500;
 }
 .header__button {
+    flex: 0 0 auto;
 }
 .icon-menu {
     display: none;
 }
+.header__logo,
+.header__button,
+.header__cart {
+    position: relative;
+    z-index: 2;
+}
+
 /*--------------------------main------------------------*/
 
 .main {
